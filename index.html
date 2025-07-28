@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>한문 선생님의 학습 공간</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>한문 선생님의 학습 공간</h1>
+        <nav>
+            <ul>
+                <li><a href="#notice">공지사항</a></li>
+                <li><a href="#quiz">한문 퀴즈</a></li>
+                <li><a href="#dict">한문 사전</a></li>
+                <li><a href="#guestbook">방명록</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- 공지사항 -->
+        <section id="notice">
+            <h2>공지사항</h2>
+            <ul id="notice-list"></ul>
+            <input type="text" id="notice-input" placeholder="새 공지 입력">
+            <button onclick="addNotice()">등록</button>
+        </section>
+
+        <!-- 한문 퀴즈 -->
+        <section id="quiz">
+            <h2>한문 퀴즈</h2>
+            <div id="quiz-question"></div>
+            <input type="text" id="quiz-answer" placeholder="정답 입력">
+            <button onclick="checkQuiz()">제출</button>
+            <div id="quiz-result"></div>
+        </section>
+
+        <!-- 한문 사전 -->
+        <section id="dict">
+            <h2>한문 사전</h2>
+            <input type="text" id="dict-input" placeholder="한자를 입력하세요">
+            <button onclick="searchDict()">검색</button>
+            <div id="dict-result"></div>
+        </section>
+
+        <!-- 방명록 -->
+        <section id="guestbook">
+            <h2>방명록</h2>
+            <input type="text" id="guestbook-name" placeholder="이름">
+            <input type="text" id="guestbook-msg" placeholder="메시지">
+            <button onclick="addGuestbook()">등록</button>
+            <ul id="guestbook-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 한문 선생님</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
