@@ -39,19 +39,19 @@ function checkQuiz() {
 showQuiz();
 
 // 한문 사전 (간단 예시)
-const dictData = {
+const resourcesData = {
     "學": "배울 학",
     "友": "벗 우",
     "家": "집 가",
     "人": "사람 인"
 };
-function searchDict() {
-    const input = document.getElementById('dict-input').value.trim();
-    const result = document.getElementById('dict-result');
-    if (dictData[input]) {
-        result.textContent = dictData[input];
+function searchResources() {
+    const input = document.getElementById('resources-input').value.trim();
+    const result = document.getElementById('resources-result');
+    if (resourcesData[input]) {
+        result.textContent = resourcesData[input];
     } else {
-        result.textContent = "사전에 없는 한자입니다.";
+        result.textContent = "없는 차시입니다.";
     }
 }
 
